@@ -1,0 +1,105 @@
+@font-face {
+    font-family: Cairo;
+    src: url(../public/fonts/Cairo-Regular.ttf);
+}
+* {
+    font-family: Cairo;
+}
+.container {
+    max-width: 90%;
+}
+.kaaf nav {
+    background: #00000005;
+}
+.kaaf nav .navbar-nav a {
+    color: #000;
+}
+.kaaf nav .navbar-nav a.active {
+    color: #024F81;
+}
+.text-blue {
+    color: #024F81;
+}
+.bg-blue {
+    background: #024F81;
+}
+.btn.bg-blue:hover {
+    background: #013050;
+}
+.kaaf nav .actions .btn {
+    background: #024F81;
+    box-shadow: 0px 8px 12px 0px #024F811A;
+    padding: 12px 50px;
+    border: solid 1px #024F81;
+    transition: .5s;
+}
+.kaaf nav .actions .btn:hover {
+    color: #024F81!important;
+    background: #fff;
+}
+.kaaf .learn {
+    background: url('../public/images/learn-bg.png') no-repeat bottom center;
+}
+.kaaf .learn .title {
+    font-size: 3rem;
+    max-width: 60%;
+}
+.kaaf .learn .text-content {
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.kaaf .shadow-blue {
+    box-shadow: 0px 8px 18px 0px #0063A452;
+}
+.kaaf .carousel-text-img {
+    height: 64px;
+    width: 64px!important;
+}
+.kaaf .image-carousel {
+    background: url('../public/images/bg-kaaf.png');
+    background-size: 100%;
+    padding: 50px 200px 0;
+}
+.kaaf .carousel-title::after {
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    height: 4px;
+    width: 100%;
+    background: #B99E67;
+    right: 0;
+}
+.kaaf .owl-nav {
+    height: 80px;
+    width: 80px;
+    transition: .5s;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.kaaf .owl-nav.next {
+    background: #0000001A url('../public/images/next.png') no-repeat center;
+}
+.kaaf .owl-nav.prev {
+    background: #0000001A url('../public/images/prev.png') no-repeat center;
+}
+.kaaf .owl-nav.next:hover {
+    background: #B99E67 url('../public/images/next-active.png') no-repeat center;
+}
+.kaaf .owl-nav.prev:hover {
+    background: #B99E67 url('../public/images/prev-active.png') no-repeat center;
+}
+.kaaf .kaaf-bg {
+    background: url('../public/images/rect-bg.png') center no-repeat;
+    background-size: 100%;
+}
+@media (max-width: 786px) {
+    .actions {
+        margin: 20px 0;
+        flex-direction: column;
+        gap: 20px!important;
+        align-items: flex-start!important;
+    }
+    .actions a, .actions .btn {
+        width: 100%;
+    }
+}
