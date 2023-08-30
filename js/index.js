@@ -4,7 +4,8 @@ $('.owl-carousel').owlCarousel({
     loop: true,
     nav: false,
     dots: false,
-    margin: 100
+    margin: 100,
+    autoplay: true
 });
 $('.next-teacher').click(() => {
     $('.teacher-carousel').trigger('next.owl.carousel');
