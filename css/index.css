@@ -118,6 +118,19 @@ body, html {
     text-decoration: none;
     color: #000;
 }
+.kaaf .en {
+    padding: 10px 40px;
+    border: solid 1px #024F81;
+    border-radius: 20px;
+    color: #024F81;
+    transition: .5s;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.kaaf .en:hover {
+    background: #024F81;
+    color: #fff;
+}
 .kaaf .social-item {
     height: 60px;
     width: 60px;
@@ -165,7 +178,7 @@ body, html {
         width: auto!important;
     }
     .kaaf .image-carousel img {
-        height: 10%;
+        width: 100%!important;
     }
     .kaaf .header-image {
         padding: 0!important;
@@ -187,5 +200,15 @@ body, html {
     .kaaf footer > .container > .d-flex {
         flex-direction: column;
         gap: 30px;
+    }
+    .kaaf .student .item {
+        flex-direction: column-reverse;
+    }
+    .kaaf .nav-container {
+        max-width: 100%!important;
+        padding: 0;
+    }
+    .kaaf .nav-container nav {
+        margin-top: 0!important;
     }
 }
