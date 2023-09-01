@@ -54,8 +54,7 @@
         <div class="container">
             <div class="learn py-5 d-flex justify-content-between align-items-center">
                 <div class="text position-relative">
-                    <img src="public/images/bg-kaaf.png" alt="كاف" class="overlay">
-                    <div class="position-absolute text-content d-flex flex-column gap-5">
+                    <div class="text-content d-flex flex-column gap-5">
                         <p class="title text-blue fw-semibold">تعلم وعلم مع كاف <br> منصه تمنحك كل ما تريد أن كنت مدرس
                             أم
                             طالب
@@ -97,8 +96,8 @@
                     </div>
                 </div>
                 <div class="teacher" id="teacher">
-                    <div class="owl-carousel owl-theme teacher-carousel" dir="ltr">
-                        <div class="item d-flex justify-content-between align-items-center" dir="rtl">
+                    <div class="row align-items-center">
+                        <div class="col-xl-6 col-sm-12">
                             <div class="text">
                                 <span class="fs-4 position-relative carousel-title text-blue">تطبيق المعلم</span>
                                 <div class="d-flex gap-3 align-items-center my-5">
@@ -111,12 +110,7 @@
                                         المتابعة</button>
                                 </a>
                             </div>
-                            <div class="image-carousel">
-                                <img src="public/images/teacher-1.png" alt="المعلم">
-                            </div>
-                        </div>
-                        <div class="item d-flex justify-content-between align-items-center" dir="rtl">
-                            <div class="text">
+                            <div class="text d-none">
                                 <span class="fs-4 position-relative carousel-title text-blue">تطبيق المعلم</span>
                                 <div class="d-flex gap-3 align-items-center my-5">
                                     <img class="carousel-text-img" src="public/images/teacher-carousel-2.png"
@@ -131,12 +125,7 @@
                                         المتابعة</button>
                                 </a>
                             </div>
-                            <div class="image-carousel">
-                                <img src="public/images/teacher-2.png" alt="المعلم">
-                            </div>
-                        </div>
-                        <div class="item d-flex justify-content-between align-items-center" dir="rtl">
-                            <div class="text">
+                            <div class="text d-none">
                                 <span class="fs-4 position-relative carousel-title text-blue">تطبيق المعلم</span>
                                 <div class="d-flex gap-3 align-items-center my-5">
                                     <img class="carousel-text-img" src="public/images/teacher-carousel-3.png"
@@ -150,8 +139,22 @@
                                         المتابعة</button>
                                 </a>
                             </div>
-                            <div class="image-carousel">
-                                <img src="public/images/teacher-3.png" alt="المعلم">
+                        </div>
+                        <div class="owl-carousel owl-theme teacher-carousel col-xl-6 col-sm-12" dir="ltr">
+                            <div class="item d-flex justify-content-center align-items-center" dir="rtl">
+                                <div class="image-carousel">
+                                    <img src="public/images/teacher-1.png" alt="المعلم">
+                                </div>
+                            </div>
+                            <div class="item d-flex justify-content-center align-items-center" dir="rtl">
+                                <div class="image-carousel">
+                                    <img src="public/images/teacher-2.png" alt="المعلم">
+                                </div>
+                            </div>
+                            <div class="item d-flex justify-content-center align-items-center" dir="rtl">
+                                <div class="image-carousel">
+                                    <img src="public/images/teacher-3.png" alt="المعلم">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -165,12 +168,28 @@
                         </div>
                     </div>
                 </div>
-                <div class="student pb-5 mb-5">
-                    <div class="owl-carousel owl-theme student-carousel" dir="ltr">
-                        <div class="item d-flex justify-content-between align-items-center" dir="rtl">
-                            <div class="image-carousel">
-                                <img src="public/images/student-1.png" alt="الطالب">
+                <div class="student pb-5 mb-5" id="student">
+                    <div class="row align-items-center">
+                        <div class="col-xl-6 col-sm-12">
+                            <div class="owl-carousel owl-theme student-carousel" dir="ltr">
+                                <div class="item d-flex justify-content-center align-items-center" dir="rtl">
+                                    <div class="image-carousel">
+                                        <img src="public/images/student-1.png" alt="الطالب">
+                                    </div>
+                                </div>
+                                <div class="item d-flex justify-content-center align-items-center" dir="rtl">
+                                    <div class="image-carousel">
+                                        <img src="public/images/student-2.png" alt="الطالب">
+                                    </div>
+                                </div>
+                                <div class="item d-flex justify-content-center align-items-center" dir="rtl">
+                                    <div class="image-carousel">
+                                        <img src="public/images/student-3.png" alt="الطالب">
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+                        <div class="col-xl-6 col-sm-12">
                             <div class="text">
                                 <span class="fs-4 position-relative carousel-title text-blue">تطبيق الطالب</span>
                                 <div class="d-flex gap-3 align-items-center my-5">
@@ -183,12 +202,7 @@
                                         المتابعة</button>
                                 </a>
                             </div>
-                        </div>
-                        <div class="item d-flex justify-content-between align-items-center" dir="rtl">
-                            <div class="image-carousel">
-                                <img src="public/images/student-2.png" alt="الطالب">
-                            </div>
-                            <div class="text">
+                            <div class="text d-none">
                                 <span class="fs-4 position-relative carousel-title text-blue">تطبيق الطالب</span>
                                 <div class="d-flex gap-3 align-items-center my-5">
                                     <img class="carousel-text-img" src="public/images/student-carousel-2.png"
@@ -204,12 +218,7 @@
                                         المتابعة</button>
                                 </a>
                             </div>
-                        </div>
-                        <div class="item d-flex justify-content-between align-items-center" dir="rtl">
-                            <div class="image-carousel">
-                                <img src="public/images/student-3.png" alt="الطالب">
-                            </div>
-                            <div class="text">
+                            <div class="text d-none">
                                 <span class="fs-4 position-relative carousel-title text-blue">تطبيق الطالب</span>
                                 <div class="d-flex gap-3 align-items-center my-5">
                                     <img class="carousel-text-img" src="public/images/student-carousel-3.png"
