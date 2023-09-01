@@ -149,6 +149,9 @@ body, html {
     border-radius: 50%;
     font-size: 2rem;
 }
+.kaaf footer {
+    background: #00000005;
+}
 .kaaf footer ul {
     list-style: none;
 }
