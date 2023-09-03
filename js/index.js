@@ -35,13 +35,10 @@ const change = event => {
     }
 }
 $('.owl-carousel').owlCarousel({
-    center: true,
     items: 1,
-    loop: true,
     nav: false,
     dots: false,
-    margin: 100,
-    autoplay: true,
+    loop: true,
     onDragged: change,
     onTranslate: change
 });
