@@ -310,4 +310,11 @@ body, html {
     .kaaf .learn .text {
         padding: 50px 0;
     }
+    .kaaf .image-carousel img {
+        width: 70%;
+    }
+    .kaaf .phone-cover::after,
+    .kaaf .phone-cover::before {
+        width: 15%;
+    }
 }
