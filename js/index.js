@@ -7,11 +7,9 @@ const change = event => {
     //     }
     // }
     if (event.target.classList.contains("teacher-carousel")) {
-        console.log(teacherTexts);
         const active = event.item.index - 2;
         for (let i = 0; i < teacherTexts.length; i++) {
             if (i == active || i == active - event.item.count) {
-                console.log(teacherTexts[i], i, active);
                 teacherTexts[i].classList.add("carousel-item-animation");
                 teacherTexts[i].classList.remove("d-none");
             } else {
@@ -20,11 +18,9 @@ const change = event => {
             }
         }
     } else if (event.target.classList.contains("student-carousel")) {
-        console.log(studentTexts);
         const active = event.item.index - 2;
         for (let i = 0; i < studentTexts.length; i++) {
             if (i == active || i == active - event.item.count) {
-                console.log(studentTexts[i], i, active);
                 studentTexts[i].classList.add("carousel-item-animation");
                 studentTexts[i].classList.remove("d-none");
             } else {
@@ -43,7 +39,6 @@ $('.owl-carousel').owlCarousel({
     onTranslate: change
 });
 $('.next-teacher').click(() => {
-    console.log($('.teacher-carousel'));
     $('.teacher-carousel').trigger('next.owl.carousel');
 })
 $('.prev-teacher').click(() => {

@@ -42,6 +42,9 @@ body, html {
     border: solid 1px #024F81;
     transition: .5s;
 }
+.kaaf .nav-link.active {
+    color: #024F81;
+}
 .kaaf nav .actions .btn:hover {
     color: #024F81!important;
     background: #fff;
@@ -88,16 +91,31 @@ body, html {
     background-size: cover;
 }
 .kaaf .image-carousel {
-    background: url('../public/images/bg-kaaf.png') no-repeat center;
+    position: relative;
+}
+.kaaf .image-carousel::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url('../public/images/phone-cover.png') center no-repeat;
     background-size: contain;
-    padding: 50px;
+    overflow: hidden;
 }
 .kaaf .image-carousel img {
-    width: 30%;
+    width: 100%;
     margin: auto;
 }
 .kaaf .carousel-item-animation {
     animation: carousel 1s ease-in-out;
+}
+.kaaf .nav-item a:hover {
+    color: #024F81;
+}
+.kaaf .owl-carousel .owl-stage-outer {
+    border-radius: 30px;
 }
 @keyframes carousel {
     from {
@@ -182,32 +200,15 @@ body, html {
     border-radius: 50%;
 }
 .kaaf .phone-cover {
-    background: url('../public/images/phone-cover.png') no-repeat center;
-    background-size: contain;
-    padding: 2%;
+    padding: 3%;
     width: 100%;
     margin: auto;
     position: relative;
+    overflow: hidden;
 }
-.kaaf .phone-cover::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 33%;
-    background: #fff;
-    z-index: 1000;
-}
-.kaaf .phone-cover::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 33%;
-    background: #fff;
-    z-index: 1000;
+.kaaf .screen-carousel {
+    background: url('../public/images/bg-kaaf.png') no-repeat center 100%;
+    background-size: contain;
 }
 @media (max-width: 786px) {
     .kaaf .actions {
@@ -277,9 +278,6 @@ body, html {
     .kaaf .student {
         margin: 0!important;
     }
-    .kaaf .image-carousel {
-        padding: 40px 50px 0;
-    }
     .kaaf .owl-carousel .item {
         flex-direction: column;
     }
@@ -313,8 +311,7 @@ body, html {
     .kaaf .image-carousel img {
         width: 70%;
     }
-    .kaaf .phone-cover::after,
-    .kaaf .phone-cover::before {
-        width: 15%;
+    .kaaf .image-carousel {
+        margin: 50px auto;
     }
 }
