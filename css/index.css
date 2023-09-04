@@ -198,6 +198,10 @@ body, html {
     align-items: center;
     background: #D9D9D94D;
     border-radius: 50%;
+    padding: 17px;
+}
+.kaaf .social-item img {
+    height: 100%;
 }
 .kaaf .phone-cover {
     padding: 3%;
